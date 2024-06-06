@@ -75,9 +75,9 @@ const Stories = () => {
   return (
         <>
         <div className="footer">
-                        <FontAwesomeIcon icon={faHouse} className="icon" onClick={home}/>
-                        <FontAwesomeIcon icon={faReadme} className="icon"  onClick={set}/>
-                        <FontAwesomeIcon icon={faUser}  className="icon" onClick={setprofile}/>
+                        <FontAwesomeIcon icon={faHouse} className="icon1" onClick={home}/>
+                        <FontAwesomeIcon icon={faReadme} className="icon1"  onClick={set}/>
+                        <FontAwesomeIcon icon={faUser}  className="icon1" onClick={setprofile}/>
                     </div>
                    
                     <div className="contal">
