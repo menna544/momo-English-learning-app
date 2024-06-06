@@ -7,23 +7,20 @@ import defaultProfileImage from '../Images/a25c646ac9c2510200931370b742b89d.jpg'
 
 function Profile() {
   const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
   const [year, setYear] = useState('');
   const [photo, setPhoto] = useState(null);
   const navigate = useNavigate(); 
 
   useEffect(() => {
-    // Retrieve email, name, and photo from local storage when component mounts
+    
     const storedEmail = localStorage.getItem('userEmail') || '';
-    const storedName = localStorage.getItem('name') || '';
     const storedYear = localStorage.getItem('year') || '';
     const storedPhoto = localStorage.getItem('profilePhoto');
   
     setEmail(storedEmail);
-    setName(storedName);
     setYear(storedYear);
     if (storedPhoto) {
-      // Convert the base64 string back to a file object
+
       const byteCharacters = atob(storedPhoto.split(',')[1]);
       const byteNumbers = new Array(byteCharacters.length);
       for (let i = 0; i < byteCharacters.length; i++) {
@@ -43,9 +40,6 @@ function Profile() {
     setEmail(e.target.value);
   };
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
   const handleyearChange = (e) => {
     setYear(e.target.value);
   };
@@ -65,16 +59,15 @@ function Profile() {
   
   
   const handleSave = () => {
-    // Save email and name to local storage
     localStorage.setItem('userEmail', email);
-    localStorage.setItem('name', name);
+  
     localStorage.setItem('year', year);
     console.log("Changes saved to local storage.");
   };
   
   const handleLogout = () => {
     localStorage.removeItem('userEmail');
-    localStorage.removeItem('name');
+   
     localStorage.removeItem('profilePhoto');
     localStorage.removeItem('year');
     localStorage.removeItem('password');
@@ -121,8 +114,6 @@ function Profile() {
 
         <label>Edit Email:</label>
         <input type="email" value={email} onChange={handleEmailChange} />
-        <label> Edit Name:</label>
-        <input value={name} onChange={handleNameChange} />
         <label> Edit Year:</label>
         <input value={year} onChange={handleyearChange} />
         <div className='buttons'>
