@@ -284,15 +284,15 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .icon{
+  .icon2{
     margin: 30px;
     color: #fff;
   }
-  .icon2{
+  .icon{
     color: black;
     margin: 30px;
   }
-  .icon:hover{
+  .icon2:hover{
     color: #81b691;
     font-size: 20px;
   }
