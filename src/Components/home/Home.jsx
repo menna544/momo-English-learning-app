@@ -108,9 +108,9 @@ const Home = () => {
     return (
         <>
             <div className="footer">
-                <FontAwesomeIcon icon={faHouse} className="icon" onClick={set}/>
-                <FontAwesomeIcon icon={faReadme} className="icon"  onClick={story}/>
-                <FontAwesomeIcon icon={faUser}  className="icon" onClick={setprofile}/>
+                <FontAwesomeIcon icon={faHouse} className="icon1" onClick={set}/>
+                <FontAwesomeIcon icon={faReadme} className="icon1"  onClick={story}/>
+                <FontAwesomeIcon icon={faUser}  className="icon1" onClick={setprofile}/>
             </div>
             <div className="contal">
                 <div className="begin"> 
