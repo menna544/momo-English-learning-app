@@ -278,7 +278,7 @@ body{
     position:fixed;
     padding: 0;
     border-radius: 12px;
-    background-color: #1e1e1e;
+    background-color:black;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -286,9 +286,10 @@ body{
   }
   .icon{
     margin: 30px;
+    color: #fff;
   }
   .icon:hover{
-    color: #fff;
+    color: #81b691;
     font-size: 20px;
   }
   .unit1{
