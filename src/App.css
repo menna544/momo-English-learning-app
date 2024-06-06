@@ -288,6 +288,10 @@ body{
     margin: 30px;
     color: #fff;
   }
+  .icon1{
+    color: black;
+    margin: 30px;
+  }
   .icon:hover{
     color: #81b691;
     font-size: 20px;
